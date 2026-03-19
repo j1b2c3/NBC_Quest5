@@ -13,8 +13,6 @@ class QUEST_5_API UQuest_Actor : public UActorComponent
 
 public:
 	UQuest_Actor();
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-	AActor* TargetCameraActor;
 
 protected:
 	virtual void BeginPlay() override;

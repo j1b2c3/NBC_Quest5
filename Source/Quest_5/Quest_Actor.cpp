@@ -121,7 +121,7 @@ void UQuest_Actor::TickComponent(float DeltaTime, ELevelTick TickType,
 	{
 		if (Owner)
 		{
-			FRotator CurrentRotation = GetOwner()->GetActorRotation();
+			FRotator CurrentRotation = Owner->GetActorRotation();
 
 			FRotator InterpRotation = FMath::RInterpTo(CurrentRotation, TargetRotation, DeltaTime, TurnSpeed);
 
